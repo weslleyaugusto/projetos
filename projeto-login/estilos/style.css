@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*Paleta de cores:
+verde: #49a09d
+lilas: #5f2c82
+*/
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:#5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    width: 256px;
+    height: 510px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+    transition: .8s;
+    transition-timing-function: ease;
+    transform: translate(-50%,-50%);
+}
+div{
+    display: block;
+}
+#imagem{
+    background: #5f2c82 url(../imagens/patern.jpg) no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 200px;
+}
+#formulario{
+    padding: 10px;
+}
+#formulario > h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#formulario > p{
+    font-size: 0.8em;
+}
+.campo{
+    background-color:#5f2c82 ;
+    border-radius: 5px;
+    margin: 10px;
+}
+.campo > input{
+    width: 79%;
+    margin-bottom: 7px;
+    height: 30px;
+    background-color: #c3f5f8;
+    border-radius: 5px;
+    border: none;
+}
+.campo input:focus-within{
+    background-color: white;
+}
+.campo span{
+    padding: 0px 5px 0px 0px;
+    font-family: 700;
+    padding: 5px;
+    width: 30px;
+    color: rgb(235, 230, 230);
+}
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #4A999B;
+    font-size: 1em;
+    border: none;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    color: white;
+}
+input[type="submit"]:hover{
+    background-color:rgb(34, 130, 127) ;
+}
+.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    height: 40px;
+    width: 100%;
+    background-color: #4A999B;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+.botao:hover{
+    background-color: rgb(34, 130, 127);
+}
